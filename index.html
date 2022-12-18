@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Welcome Form</h1>
+    <p class="welcome-note" id="welcome">Welcome Jolly Beans!</p>
+    <p class="welcome-note" id="description">Give us your opinions and get entered to win a signed copy of Josh's book.</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">What's your Name? <input id="name" name="name" type="text" placeholder="Josh Carrot" required></label>
+        <label for="email" id="email-label">What's your Email? <input id="email" name="email" type="email" placeholder="josh@jolly.com" required></label>
+        <label for="number" id="number-label">How many years have you watched Jolly?
+          <input id="number" name="number" type="number" min="0" max="7" placeholder="Pick a number 0-7" required>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="fave-series">What is your favorite recent series?
+          <select id="dropdown" name="fave-series">
+            <option value="">(select one)</option>
+            <option value="1">Tour of Italy with Lord Z</option>
+            <option value="2">AI Josh</option>
+            <option value="3">American Fast Food Tour</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>What do you prefer we feed Gabby?
+          <label for="good-food" class="radio-labels"><input class="inline" id="good-food" type="radio" name="food-type" value="delicious"> Delicious Food</label>
+          <label for="gross-food" class="radio-labels"><input class="inline" id="gross-food" type="radio" name="food-type"  value="disgusting"> Disgusting Food</label>
+        </label>
+        <label>What types of merch do you want?
+          <label for="clothing" class="checkbox-labels"><input type="checkbox" class="inline" id="clothing" name:"clothing" value="clothing">Clothing
+          </label>
+          <label for="art" class="checkbox-labels"><input type="checkbox" class="inline" id="art" name:"art" value="art">Art
+          </label>
+          <label for="books" class="checkbox-labels"><input type="checkbox" class="inline" id="books" name:"books" value="books">Books
+          </label>
+          <label for="music-albums"class="checkbox-labels"><input type="checkbox" class="inline" id="music-albums" name:"music-albums" value="music-albums">Music Albums
+          </label>
+        </label> 
+        
+      </fieldset>
+      <fieldset>
+        <label for="ideas">Additional Ideas? (Keep them clean)
+          <textarea id="ideas" name="ideas" rows="3" cols="30" placeholder="Anything you wish we would film ourselves doing?"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
